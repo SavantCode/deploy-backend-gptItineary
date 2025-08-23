@@ -35,12 +35,37 @@ const FRONTEND_URLS = process.env.FRONTEND_URLS?.split(',') || [
 ];
 
 // --- Middleware ---
+
+
+const allowedOrigins = [
+  'https://travel-itenary-dashboard-me.vercel.app',
+  'http://localhost:5173',
+  'http://localhost:5174',
+];
+
 app.use(cors({
-  origin: FRONTEND_URLS,
+  origin: function (origin, callback) {
+    if (!origin) return callback(null, true); // allow Postman/cURL
+    if (allowedOrigins.includes(origin)) return callback(null, true);
+    return callback(new Error('Not allowed by CORS'));
+  },
+  credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH'],
   allowedHeaders: ['Content-Type', 'Authorization'],
-  credentials: true,
 }));
+
+
+
+
+// app.use(cors({
+//   origin: FRONTEND_URLS,
+//   methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH'],
+//   allowedHeaders: ['Content-Type', 'Authorization'],
+//   credentials: true,
+// }));
+
+
+
 
 app.use(express.json({ limit: '16kb' }));
 app.use(express.urlencoded({ extended: true, limit: '16kb' }));
