@@ -1,0 +1,35 @@
+http://localhost:5000/api/generate
+
+
+{
+  "user": {
+    "name": "Rahul",
+    "type": "Couple"
+  },
+  "travelBasics": {
+    "destination": "Jaipur",
+    "startDate": "2025-09-10",
+    "endDate": "2025-09-13",
+    "days": 4,
+    "preferences": ["Romantic", "Historical", "Fun & Entertainment"]
+  },
+  "accommodation": {
+    "hotelName": "Taj Rambagh Palace",
+    "hotelType": "Luxury"
+  },
+  "transport": {
+    "inCity": "Private Car",
+    "pickup": "Taj Rambagh Palace"
+  },
+  "food": {
+    "type": "Vegetarian",
+    "cuisine": ["Rajasthani", "Street Food"],
+    "romanticDinner": true
+  },
+  "travelDetails": {
+    "mode": "Flight",
+    "flightNumber": "AI202"
+  },
+  "budget": "Luxury",
+  "attractions": ["Amber Fort", "Hawa Mahal", "Jal Mahal", "Chokhi Dhani"]
+}

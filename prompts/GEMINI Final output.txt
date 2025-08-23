@@ -1,0 +1,265 @@
+{
+    "traveler": "Rahul",
+    "destination": "Jaipur",
+    "tripDuration": "4 Days",
+    "startDate": "2025-09-10",
+    "endDate": "2025-09-13",
+    "itinerary": [
+        {
+            "day": 1,
+            "title": "A Royal Welcome to Jaipur: Exploring the Pink City's Majesty",
+            "summary": "Immerse yourself in the vibrant heart of Jaipur, discovering iconic landmarks and hidden gems.",
+            "activities": [
+                {
+                    "time": "6:00 AM",
+                    "activity": "Sunrise at Hawa Mahal",
+                    "details": "Witness the magic of sunrise painting the Hawa Mahal in hues of gold and pink, a truly breathtaking experience.",
+                    "image": "https://pixabay.com/get/g9a96c350c201fcb775cdb997a92de3fe61ddfd2d48368ac8a48cbb7a1224aa587f7059ae4a09325f3b9d95ec489dfc53cf578a3f12eb3a4f285c912c78ccce96_640.jpg"
+                },
+                {
+                    "time": "7:00 AM",
+                    "activity": "Breakfast at Laxmi Misthan Bhandar",
+                    "details": "Start your day with a delicious Rajasthani breakfast at this iconic eatery, savoring the local flavors.",
+                    "image": "https://pixabay.com/get/g66c1339f3ead5e9e22b848593e23166743b164c00d60fe766a4fcb7ef6945890f159c0051c61821e9bca533a87a841689c22af1efcdb437d37e7ffb9e906ab94_640.jpg"
+                },
+                {
+                    "time": "8:00 AM",
+                    "activity": "City Palace Exploration",
+                    "details": "Explore the opulent City Palace, a mesmerizing blend of Mughal and Rajput architecture, feeling like royalty yourself.",
+                    "image": "https://pixabay.com/get/g001e61e170bdb5b9cfc4bc687767d8b0e2556f841b3d9649abd9c0ef2a5b7f60522b8c4a5edf9dabce5fd37b07843e7e0892bed4543bfc9749c825de8e502df8_640.jpg"
+                },
+                {
+                    "time": "10:00 AM",
+                    "activity": "Jantar Mantar Visit",
+                    "details": "Marvel at the astronomical instruments at Jantar Mantar, a testament to the ingenuity of the Rajput era.",
+                    "image": "https://pixabay.com/get/g2e76b1d9873521ba473a47016e6025e7c92bed3646182a40680b487fd9555bfd799de5cdd030d111617bcdad9f39a4bd9cee87a691c150f2f294a367c604d20e_640.jpg"
+                },
+                {
+                    "time": "12:00 PM",
+                    "activity": "Lunch at 1135 AD",
+                    "details": "Enjoy a delectable lunch at this fine-dining restaurant, known for its elegant ambiance and sophisticated Rajasthani cuisine.",
+                    "image": "https://pixabay.com/get/gd9eb193d78ae90dfa5e2e6d100ff4ea5a954e389bc7bbbb6d9efa3751eec48c0f3c1483c17ed85a59643dc2c356225692571caf921818567765365fbff07b6ef_640.jpg"
+                },
+                {
+                    "time": "2:00 PM",
+                    "activity": "Albert Hall Museum",
+                    "details": "Discover the rich history and art of Rajasthan at this beautiful museum, a treasure trove of artifacts.",
+                    "image": "https://pixabay.com/get/g16a915a6f86babe30d5df4854cf7c9118d55e02681874cee3578e6a81de5433b06159486f5397a5ae15c1da16681a00e6961334ba5432fb861a1c839eeb00ddd_640.jpg"
+                },
+                {
+                    "time": "4:00 PM",
+                    "activity": "Shopping at Johari Bazaar",
+                    "details": "Indulge in some retail therapy, browsing through the dazzling jewelry and handicrafts at the vibrant Johari Bazaar.",
+                    "image": "https://pixabay.com/get/g15a593a882c7e7cbc9aa3ad075aa556ace7e112a2f27645093f9b99a38299b7e2d9e125c46c5ef84f0e7064782ed6f4713f1a4fa639fd9fdb765d56198fa9c8a_640.jpg"
+                },
+                {
+                    "time": "6:00 PM",
+                    "activity": "Relaxation at Hotel",
+                    "details": "Unwind and freshen up at your hotel before the evening's adventures.",
+                    "image": "https://pixabay.com/get/g23481d09ff95c48ae96b80632f0a24b3703737356f980c13a18a02fe4dd7030441928ba9b822dbfed85a5f2093076470d344c4cf66140654323926422ed16ee8_640.jpg"
+                },
+                {
+                    "time": "7:30 PM",
+                    "activity": "Dinner at a Rooftop Restaurant",
+                    "details": "Enjoy a romantic dinner at a rooftop restaurant, savoring delicious food with panoramic views of the illuminated city.",
+                    "image": "https://pixabay.com/get/ge55e16279cbd4e5afdb9eac5cbddf1e3c6bcb4f7ef7b31968e86da850fa1f07208ff11d39cf03177d23889d77d949bd11f616683c31ad4f16a91ee1228b027dc_640.jpg"
+                },
+                {
+                    "time": "9:00 PM",
+                    "activity": "Evening stroll at the City Palace",
+                    "details": "Experience the magic of the illuminated City Palace at night, a captivating sight.",
+                    "image": "https://pixabay.com/get/g405ebd95ef10e81e2a937595a50dc81e6af38f5d019d07b270bcb49f5ca6c14120d7a4f7d4e072b752cc729e7681f4361de2c29e2be58779c52104413baccae7_640.jpg"
+                },
+                {
+                    "time": "10:00 PM",
+                    "activity": "Rest",
+                    "details": "Sweet dreams in Jaipur!",
+                    "image": "https://pixabay.com/get/ga33f660d936afb711f0dab293b90925aded6e8545cba180643335e5794fd4deabd0b8b3b5c082803a16c4473785f3b911cc0a21507928cc6527a78dbc3cbd835_640.jpg"
+                }
+            ]
+        },
+        {
+            "day": 2,
+            "title": "Forts, Elephants, and Hidden Gems: Unveiling Jaipur's Secrets",
+            "summary": "Embark on an exciting journey to majestic forts, encounter majestic elephants, and discover hidden local gems.",
+            "activities": [
+                {
+                    "time": "6:00 AM",
+                    "activity": "Sunrise Yoga Session",
+                    "details": "Start your day with a rejuvenating yoga session, embracing the serenity of Jaipur's morning.",
+                    "image": "https://pixabay.com/get/g785b6ff43fdfbace1e62c687faea2bb84d5067d22b819b5b2b24a63dced6fdb9843e52d601d8e16b0de8753953de0072ea23f1fe3de1ab57ab538dc63446eb58_640.jpg"
+                },
+                {
+                    "time": "7:00 AM",
+                    "activity": "Breakfast at Hotel",
+                    "details": "Enjoy a leisurely breakfast at your hotel, fueling up for the day's explorations.",
+                    "image": "https://pixabay.com/get/ga95e1cca99dbdc7dfb12c05321daa22c0c657dd50fa44958752f8897fc1dcc3e99f6f79c86e7b4e07641f2c386389a07a687cf85e36ef2efebc7153e50953578_640.jpg"
+                },
+                {
+                    "time": "8:00 AM",
+                    "activity": "Amber Fort Excursion (Elephant Ride Optional)",
+                    "details": "Journey to the magnificent Amber Fort, choosing an optional elephant ride for a truly regal experience."
+                },
+                {
+                    "time": "11:00 AM",
+                    "activity": "Jaigarh Fort Exploration",
+                    "details": "Explore the mighty Jaigarh Fort, marveling at its imposing architecture and panoramic views.",
+                    "image": "https://pixabay.com/get/gf9f483ef601762a7535f80b68bbd0cb99ad648222a91941270915ad9caa273954b4865d91e8e3350d4a284cfd0e0b344441eb36a05eabc9acd5cbeb6148a3d5c_640.jpg"
+                },
+                {
+                    "time": "1:00 PM",
+                    "activity": "Lunch at a Local Restaurant near Amber Fort",
+                    "details": "Savor authentic Rajasthani cuisine at a local restaurant near Amber Fort, experiencing the local flavors.",
+                    "image": "https://pixabay.com/get/g61161ba410ab0306d4123e69716fd22b474ffe03587e047ff6ce7bed032e45a648e4fe9869328f25391dd9e292376bddd7ae892e25c21a38846e5196ba902be4_640.jpg"
+                },
+                {
+                    "time": "2:30 PM",
+                    "activity": "Panoramic view from Nahargarh Fort",
+                    "details": "Enjoy a stunning panoramic view of Jaipur from Nahargarh Fort, capturing breathtaking photos.",
+                    "image": "https://pixabay.com/get/g71f141672484df026e4a7bbf33b1436cefb16a4e275aff3fc1a822b39818517b5a6412d797f0ccca0359c005a1c222875679ed8a6e7d7d0372c2886b4255c128_640.jpg"
+                },
+                {
+                    "time": "4:30 PM",
+                    "activity": "Visit Galtaji Temple (Monkey Temple)",
+                    "details": "Explore the charming Galtaji Temple, also known as the Monkey Temple, a hidden gem with natural beauty."
+                },
+                {
+                    "time": "6:30 PM",
+                    "activity": "Relaxation at Hotel",
+                    "details": "Relax and refresh at your hotel.",
+                    "image": "https://pixabay.com/get/g2324589160b598aee355f925b75feb87ed2644a9ee05e991f5a76dd3c22cd10f3428c3ed56bdc72b67bd86689d9c99d8224e72f5c88d6dd98794e8bc87d24536_640.jpg"
+                },
+                {
+                    "time": "7:30 PM",
+                    "activity": "Dinner at a Traditional Rajasthani Restaurant",
+                    "details": "Indulge in a traditional Rajasthani thali, a culinary journey through the region's rich flavors.",
+                    "image": "https://pixabay.com/get/g97231e571a724ec37b803228bca022207daf0ecbfd13003ee7beed38f7763335fc68d41c61f741a4ae4e43f92ce43e05_640.jpg"
+                },
+                {
+                    "time": "9:00 PM",
+                    "activity": "Evening Cultural Show (Optional)",
+                    "details": "Enjoy an optional traditional Rajasthani cultural show, experiencing the region's vibrant arts and music."
+                },
+                {
+                    "time": "10:00 PM",
+                    "activity": "Rest",
+                    "details": "Rest well after your day's adventures!",
+                    "image": "https://pixabay.com/get/gb6f3b1835929b5880695b050bef041e972c34d48edf4f6937fd03e96ac270aea51b5895077e16c74fc564a5305927210cb9b053623d06880527c3f7d8041625b_640.jpg"
+                }
+            ]
+        },
+        {
+            "day": 3,
+            "title": "Beyond the Pink City: Exploring Local Crafts and Hidden Charms",
+            "summary": "Venture beyond the main tourist attractions to discover Jaipur's hidden charms and local craftsmanship.",
+            "activities": [
+                {
+                    "time": "6:00 AM",
+                    "activity": "Early Morning Walk in a Local Market",
+                    "details": "Experience the vibrant energy of Jaipur's local markets as they awaken.",
+                    "image": "https://pixabay.com/get/gff701934bfb2e7dbabad65dc47759d538e649eff58a8216a3c1b4d2416f1bffd2ac0c5ea5bc78f946524661a772a53c425ef231dfcd5441664d25ea7c055b95e_640.jpg"
+                },
+                {
+                    "time": "7:00 AM",
+                    "activity": "Breakfast at a Local Tea Stall",
+                    "details": "Enjoy a traditional chai and breakfast at a local tea stall, experiencing authentic Jaipur street food.",
+                    "image": "https://pixabay.com/get/g59b60e4f1be9fb89b73a8772bcd1e2b06f9939fbebc9e0cdd3deb3070bdd410799a21d7dbf1085a574c5a9101dc61bc995997480505b4233d462116bcd3c8592_640.jpg"
+                },
+                {
+                    "time": "8:00 AM",
+                    "activity": "Block Printing Workshop",
+                    "details": "Participate in a hands-on block printing workshop, creating your own unique souvenir.",
+                    "image": "https://pixabay.com/get/gf194db4ec99c48a40a95b3927f5b17e3edb0c642c0ccb675891738c10b62683779277b404b367ce8bca1ef59bab41ebe_640.jpg"
+                },
+                {
+                    "time": "10:00 AM",
+                    "activity": "Visit Anokhi Museum of Hand Printing",
+                    "details": "Explore the rich history of hand printing at the Anokhi Museum, appreciating the artistry involved.",
+                    "image": "https://pixabay.com/get/g23a86544c7fc8cf4a47b54b15ac05b24b2273e9e58e6f4ae587308d88660a5b978e0e47fc83db00f5c5a2435eabbd94c1f62013e8aefbe2e50300fd8e5036524_640.jpg"
+                },
+                {
+                    "time": "12:00 PM",
+                    "activity": "Lunch at a Local Eatery",
+                    "details": "Enjoy a delicious and affordable lunch at a local eatery, savoring the simple flavors of Rajasthan.",
+                    "image": "https://pixabay.com/get/g6fc08c61bb819cee67383a4fd6f2f33483868dc57566c130c208f9f1584cedde42503e3c100a249f3809fc0c97c6dc813ef9a4093f93d8ebebd622595907e7da_640.jpg"
+                },
+                {
+                    "time": "1:30 PM",
+                    "activity": "Explore the local bazaars (Bapu Bazaar, etc.)",
+                    "details": "Discover the hidden treasures of Jaipur's local bazaars, finding unique souvenirs and experiencing the bustling atmosphere."
+                },
+                {
+                    "time": "4:00 PM",
+                    "activity": "Visit the Sisodia Rani Palace and Garden",
+                    "details": "Explore this beautiful hidden gem, known for its intricate murals and serene gardens, a peaceful escape from the city’s hustle.",
+                    "image": "https://pixabay.com/get/g1a0690b5a0b2ac08af13a9053407acc48ebbc3b7bac6904aaafd31095cb5c448ab3a98d8a097565d917c42f5e36e2924be2758d98fc9133719d4543dbf4c7b61_640.jpg"
+                },
+                {
+                    "time": "6:00 PM",
+                    "activity": "Relaxation and Shopping at Hotel",
+                    "details": "Unwind at your hotel and do some last-minute souvenir shopping.",
+                    "image": "https://pixabay.com/get/g84326245160335a9203125a03eb54f40b5374d375f83b516380fa3063037d40e876248e8ba37ad0abb28831d1ed1ed4bb62240bb6bffc44a58d4706d063746b8_640.jpg"
+                },
+                {
+                    "time": "7:30 PM",
+                    "activity": "Farewell Dinner at a Fine Dining Restaurant",
+                    "details": "Enjoy a special farewell dinner at a fine-dining restaurant, celebrating your Jaipur experience.",
+                    "image": "https://pixabay.com/get/gd9b51db880d63b4cca427f20767dc57a8b0a73ec6addd0f12dc587edcf6bc60c3111889c0f088e9ab4a162ce745913f4920d2e76e86e8aa75b2725dab46288da_640.jpg"
+                },
+                {
+                    "time": "9:00 PM",
+                    "activity": "Relax and Reflect",
+                    "details": "Spend some time reflecting on your incredible Jaipur journey.",
+                    "image": "https://pixabay.com/get/gf8b8d875057b2e14114899a9ab875e1382eb40dbcc6a3b67ec2cec1f213355d26277b8625c488f1ae27335cc1492be781a2cb53c1795f447f75257e4a51e14d6_640.jpg"
+                },
+                {
+                    "time": "10:00 PM",
+                    "activity": "Rest",
+                    "details": "Good night, Jaipur!",
+                    "image": "https://pixabay.com/get/gb81a98ff22e6ce9922f2da0d7014428fd9bfb277546c6cfc708d6878b0f808fe40dca708195a6046aadfc54a29cade7db1b9b8c876e7d22ffe8413825d044681_640.jpg"
+                }
+            ]
+        },
+        {
+            "day": 4,
+            "title": "Departure: Saying Goodbye to the Pink City",
+            "summary": "Enjoy a final Rajasthani breakfast before departing from the enchanting Pink City.",
+            "activities": [
+                {
+                    "time": "6:00 AM",
+                    "activity": "Sunrise View from your Hotel Room (Optional)",
+                    "details": "If your hotel offers a good view, enjoy a final sunrise over Jaipur."
+                },
+                {
+                    "time": "7:00 AM",
+                    "activity": "Breakfast at Hotel",
+                    "details": "Enjoy a final delicious Rajasthani breakfast at your hotel.",
+                    "image": "https://pixabay.com/get/g903e0c34710b8c97cdad95f326d937b5247b8379a3255f1830b3f8491d67a2854aa41453e12522ef127bb482b5952563e195b0b9911798a5ac44ea68b058e022_640.jpg"
+                },
+                {
+                    "time": "8:00 AM",
+                    "activity": "Last Minute Souvenir Shopping (if needed)",
+                    "details": "If you missed anything, do some last-minute souvenir shopping at the hotel or airport."
+                },
+                {
+                    "time": "9:00 AM",
+                    "activity": "Transfer to Jaipur Airport",
+                    "details": "Transfer to Jaipur Airport for your departure.",
+                    "image": "https://pixabay.com/get/g601f72abca75d7f57923aabe126b57d145ffd7f091faf841e9db7bc546e254829c2baa143ffd12285bd210a4854371faa92a0eb758d908f8659c883c4f371ca4_640.jpg"
+                },
+                {
+                    "time": "10:00 AM",
+                    "activity": "Departure",
+                    "details": "Fly home with unforgettable memories of Jaipur!",
+                    "image": "https://pixabay.com/get/gf1c8d89cf2b6924b2f7e9ce0bdd0f4145de5c958f9e2011935fa5f8fc2b88d6df20b324fbf8e6f9c23bfc691ba8a4ed288f0485cc6188c9b64457f0d5f2e9a0e_640.jpg"
+                },
+                {
+                    "time": "10:00 PM",
+                    "activity": "Rest",
+                    "details": "Rest on your flight home.",
+                    "image": "https://pixabay.com/get/g9074501359f6736c7a9d79402a45d4f616646c0d360c4ae2eddfbe962d782cc366c85ceecf8954b4678dab8e6c050da00cedb64807a8f3cfc766409f729fecb8_640.jpg"
+                }
+            ]
+        }
+    ]
+}

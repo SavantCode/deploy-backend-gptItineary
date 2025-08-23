@@ -1,0 +1,636 @@
+🧪 Example API Requests
+1. Find a specific vehicle by number (case-insensitive):
+GET /api/vehicles?registration_no=MH12XY9876
+
+2. Find available vehicle with a specific number:
+GET /api/vehicles?registration_no=MH12XY9876&status=Available
+
+
+| Query Param       | Description                    |
+| ----------------- | ------------------------------ |
+| `type`            | Vehicle type (e.g., SUV)       |
+| `status`          | Availability (e.g., Available) |
+| `location`        | City/location                  |
+| `seats`           | Seat count (number)            |
+| `registration_no` | Vehicle number (partial/full)  |
+
+
+
+
+Absolutely! Here’s a **complete API guide handbook** for your vehicle management API, including all endpoints, request formats, query filters, responses, and examples.
+
+---
+
+# 🚗 Vehicle Management API Handbook
+
+---
+
+## Base URL
+
+```
+http://localhost:4000/api/vehicles
+```
+
+---
+
+# 📖 Endpoints
+
+---
+
+## 1. **Get All Vehicles**
+
+### GET `/api/vehicles`
+
+Fetch a list of vehicles with optional filters.
+
+### Query Parameters (all optional):
+
+| Parameter         | Type   | Description                                      | Example                  |
+| ----------------- | ------ | ------------------------------------------------ | ------------------------ |
+| `type`            | string | Vehicle type (e.g., Sedan, SUV, Luxury Sedan)    | `type=Luxury%20Sedan`    |
+| `status`          | string | Vehicle availability status (e.g., Available)    | `status=Available`       |
+| `location`        | string | City/location of the vehicle                     | `location=Mumbai`        |
+| `seats`           | number | Number of seats                                  | `seats=5`                |
+| `registration_no` | string | Vehicle registration number (partial/full match) | `registration_no=MH12XY` |
+
+### Example Request:
+
+```http
+GET /api/vehicles?type=Luxury%20Sedan&status=Available&location=Mumbai
+```
+
+### Example Response:
+
+```json
+[
+  {
+    "vehicle_id": "123e4567-e89b-12d3-a456-426614174000",
+    "make": "Mercedes-Benz",
+    "model": "E-Class",
+    "year": 2023,
+    "type": "Luxury Sedan",
+    "seats": 5,
+    "transmission": "Automatic",
+    "fuel_type": "Petrol",
+    "mileage": 12000,
+    "registration_no": "MH01MB0001",
+    "status": "Available",
+    "location": "Mumbai",
+    "daily_rate": 8500,
+    "features": ["Leather Seats", "Sunroof", "Ambient Lighting", "GPS", "Airbags"],
+    "last_serviced": "2025-08-01"
+  }
+]
+```
+
+---
+
+## 2. **Get Vehicle by ID**
+
+### GET `/api/vehicles/:id`
+
+Fetch a single vehicle by its unique `vehicle_id`.
+
+### URL Params:
+
+| Param | Type   | Description                       |
+| ----- | ------ | --------------------------------- |
+| `id`  | string | UUID of the vehicle (vehicle\_id) |
+
+### Example Request:
+
+```http
+GET /api/vehicles/123e4567-e89b-12d3-a456-426614174000
+```
+
+### Example Response:
+
+```json
+{
+  "vehicle_id": "123e4567-e89b-12d3-a456-426614174000",
+  "make": "Mercedes-Benz",
+  "model": "E-Class",
+  "year": 2023,
+  "type": "Luxury Sedan",
+  "seats": 5,
+  "transmission": "Automatic",
+  "fuel_type": "Petrol",
+  "mileage": 12000,
+  "registration_no": "MH01MB0001",
+  "status": "Available",
+  "location": "Mumbai",
+  "daily_rate": 8500,
+  "features": ["Leather Seats", "Sunroof", "Ambient Lighting", "GPS", "Airbags"],
+  "last_serviced": "2025-08-01"
+}
+```
+
+---
+
+## 3. **Create a New Vehicle**
+
+### POST `/api/vehicles`
+
+Add a new vehicle record to the database.
+
+### Request Headers:
+
+```
+Content-Type: application/json
+```
+
+### Request Body:
+
+| Field             | Type      | Required | Description                                   |
+| ----------------- | --------- | -------- | --------------------------------------------- |
+| `make`            | string    | Yes      | Manufacturer (e.g., Toyota, BMW)              |
+| `model`           | string    | Yes      | Vehicle model (e.g., Innova, X5)              |
+| `year`            | number    | Yes      | Manufacturing year                            |
+| `type`            | string    | Yes      | Vehicle type (e.g., Sedan, Luxury SUV)        |
+| `seats`           | number    | Yes      | Number of seats                               |
+| `transmission`    | string    | Yes      | Transmission type (Manual/Automatic)          |
+| `fuel_type`       | string    | Yes      | Fuel type (Petrol, Diesel, Electric)          |
+| `mileage`         | number    | Yes      | Total mileage in kilometers                   |
+| `registration_no` | string    | Yes      | Vehicle registration number                   |
+| `status`          | string    | Yes      | Availability status (Available, Rented, etc.) |
+| `location`        | string    | Yes      | Location / city                               |
+| `daily_rate`      | number    | Yes      | Rental daily rate                             |
+| `features`        | string\[] | Optional | List of features (e.g., AC, GPS, Airbags)     |
+| `last_serviced`   | date      | Optional | Date of last servicing (YYYY-MM-DD format)    |
+
+### Example Request Body:
+
+```json
+{
+  "make": "Toyota",
+  "model": "Innova",
+  "year": 2022,
+  "type": "Van",
+  "seats": 7,
+  "transmission": "Automatic",
+  "fuel_type": "Diesel",
+  "mileage": 43000,
+  "registration_no": "MH12XY9876",
+  "status": "Available",
+  "location": "Mumbai",
+  "daily_rate": 3000,
+  "features": ["AC", "GPS", "Airbags"],
+  "last_serviced": "2025-07-10"
+}
+```
+
+### Example Response (Status 201 Created):
+
+```json
+{
+  "vehicle_id": "a1b2c3d4-5678-90ef-gh12-ijklmnopqrst",
+  "make": "Toyota",
+  "model": "Innova",
+  "year": 2022,
+  "type": "Van",
+  "seats": 7,
+  "transmission": "Automatic",
+  "fuel_type": "Diesel",
+  "mileage": 43000,
+  "registration_no": "MH12XY9876",
+  "status": "Available",
+  "location": "Mumbai",
+  "daily_rate": 3000,
+  "features": ["AC", "GPS", "Airbags"],
+  "last_serviced": "2025-07-10"
+}
+```
+
+---
+
+## 4. **Update an Existing Vehicle**
+
+### PUT `/api/vehicles/:id`
+
+Update vehicle data by `vehicle_id`.
+
+### URL Params:
+
+| Param | Type   | Description                       |
+| ----- | ------ | --------------------------------- |
+| `id`  | string | UUID of the vehicle (vehicle\_id) |
+
+### Request Headers:
+
+```
+Content-Type: application/json
+```
+
+### Request Body:
+
+Partial or full update of any fields from the vehicle model.
+
+Example:
+
+```json
+{
+  "status": "Rented",
+  "daily_rate": 3200,
+  "location": "Pune"
+}
+```
+
+### Example Response:
+
+```json
+{
+  "vehicle_id": "a1b2c3d4-5678-90ef-gh12-ijklmnopqrst",
+  "make": "Toyota",
+  "model": "Innova",
+  "year": 2022,
+  "type": "Van",
+  "seats": 7,
+  "transmission": "Automatic",
+  "fuel_type": "Diesel",
+  "mileage": 43000,
+  "registration_no": "MH12XY9876",
+  "status": "Rented",
+  "location": "Pune",
+  "daily_rate": 3200,
+  "features": ["AC", "GPS", "Airbags"],
+  "last_serviced": "2025-07-10"
+}
+```
+
+---
+
+## 5. **Delete a Vehicle**
+
+### DELETE `/api/vehicles/:id`
+
+Delete vehicle by `vehicle_id`.
+
+### URL Params:
+
+| Param | Type   | Description                       |
+| ----- | ------ | --------------------------------- |
+| `id`  | string | UUID of the vehicle (vehicle\_id) |
+
+### Example Response:
+
+```json
+{
+  "vehicle_id": "a1b2c3d4-5678-90ef-gh12-ijklmnopqrst",
+  "make": "Toyota",
+  "model": "Innova",
+  "year": 2022,
+  "type": "Van",
+  "seats": 7,
+  "transmission": "Automatic",
+  "fuel_type": "Diesel",
+  "mileage": 43000,
+  "registration_no": "MH12XY9876",
+  "status": "Rented",
+  "location": "Pune",
+  "daily_rate": 3200,
+  "features": ["AC", "GPS", "Airbags"],
+  "last_serviced": "2025-07-10"
+}
+```
+
+---
+
+# 🔎 Notes on Filtering and Searching
+
+* Filters are **case-insensitive** partial matches for string fields (using regex).
+* `seats` is an exact number match.
+* If no filters are provided, all vehicles will be returned.
+* `registration_no` supports partial matching (e.g., searching with "MH12" returns all vehicles with registration numbers containing "MH12").
+
+---
+
+# ⚠️ Error Responses
+
+| Status Code | Response                                        | Description                   |
+| ----------- | ----------------------------------------------- | ----------------------------- |
+| `404`       | `{ "error": "Not found" }`                      | Vehicle or resource not found |
+| `500`       | `{ "error": "Server error", "details": "..." }` | Server or database error      |
+
+---
+
+# 🛠️ Example CURL Requests
+
+### Create Vehicle
+
+```bash
+curl -X POST http://localhost:4000/api/vehicles \
+  -H "Content-Type: application/json" \
+  -d '{
+    "make": "Audi",
+    "model": "A6",
+    "year": 2024,
+    "type": "Luxury Sedan",
+    "seats": 5,
+    "transmission": "Automatic",
+    "fuel_type": "Petrol",
+    "mileage": 8000,
+    "registration_no": "KA05AU6789",
+    "status": "Available",
+    "location": "Bangalore",
+    "daily_rate": 9000,
+    "features": ["Virtual Cockpit", "Premium Sound System", "Massage Seats"],
+    "last_serviced": "2025-08-10"
+  }'
+```
+
+### Get Vehicles (Filter by status)
+
+```bash
+curl "http://localhost:4000/api/vehicles?status=Available"
+```
+
+---
+
+# 🚀 Tips for Extending API
+
+* Add **pagination** with `limit` and `page` query parameters.
+* Add **sorting** by price, year, or mileage.
+* Add **range filters** (e.g., price between `minRate` and `maxRate`).
+* Add **authentication** for protected routes.
+* Validate inputs using libraries like Joi or express-validator.
+
+---
+
+If you want, I can help you create Postman collections or Swagger docs for this API too!
+
+---
+
+Let me know if you want me to add those or customize the guide in any way!
+
+
+
+
+http://localhost:5000/api/vehicles
+
+{
+  "make": "BMW",
+  "model": "X7",
+  "year": 2024,
+  "type": "Luxury SUV",
+  "seats": 7,
+  "transmission": "Automatic",
+  "fuel_type": "Diesel",
+  "mileage": 8000,
+  "registration_no": "KA05BM6789",
+  "status": "Available",
+  "location": "Bangalore",
+  "daily_rate": 12000,
+  "features": ["Panoramic Roof", "Massaging Seats", "Night Vision", "GPS", "Airbags"],
+  "last_serviced": "2025-07-20"
+}
+
+
+
+....................................
+
+
+Sure! Let’s start by **feeding luxury car data** into your API, then I’ll give you a list of search URLs and example queries to try out all the search operations.
+
+---
+
+# Step 1: Feed Luxury Cars Data
+
+Here are **5 luxury vehicle JSON datasets** to create with your POST `/api/vehicles` endpoint.
+
+---
+
+### Luxury Car Data to POST
+
+**1. Mercedes-Benz E-Class**
+
+```json
+{
+  "make": "Mercedes-Benz",
+  "model": "E-Class",
+  "year": 2023,
+  "type": "Luxury Sedan",
+  "seats": 5,
+  "transmission": "Automatic",
+  "fuel_type": "Petrol",
+  "mileage": 12000,
+  "registration_no": "MH01MB0001",
+  "status": "Available",
+  "location": "Mumbai",
+  "daily_rate": 8500,
+  "features": ["Leather Seats", "Sunroof", "Ambient Lighting", "GPS", "Airbags"],
+  "last_serviced": "2025-08-01"
+}
+```
+
+---
+
+**2. BMW X7**
+
+```json
+{
+  "make": "BMW",
+  "model": "X7",
+  "year": 2024,
+  "type": "Luxury SUV",
+  "seats": 7,
+  "transmission": "Automatic",
+  "fuel_type": "Diesel",
+  "mileage": 8000,
+  "registration_no": "KA05BM6789",
+  "status": "Available",
+  "location": "Bangalore",
+  "daily_rate": 12000,
+  "features": ["Panoramic Roof", "Massaging Seats", "Night Vision", "GPS", "Airbags"],
+  "last_serviced": "2025-07-20"
+}
+```
+
+---
+
+**3. Audi A8**
+
+```json
+{
+  "make": "Audi",
+  "model": "A8",
+  "year": 2022,
+  "type": "Luxury Sedan",
+  "seats": 5,
+  "transmission": "Automatic",
+  "fuel_type": "Petrol",
+  "mileage": 15000,
+  "registration_no": "DL09AU4567",
+  "status": "Rented",
+  "location": "Delhi",
+  "daily_rate": 9000,
+  "features": ["Virtual Cockpit", "Premium Sound System", "Massage Seats", "GPS", "Airbags"],
+  "last_serviced": "2025-06-15"
+}
+```
+
+---
+
+**4. Lexus RX 500h**
+
+```json
+{
+  "make": "Lexus",
+  "model": "RX 500h",
+  "year": 2023,
+  "type": "Luxury SUV",
+  "seats": 5,
+  "transmission": "Automatic",
+  "fuel_type": "Hybrid",
+  "mileage": 9000,
+  "registration_no": "MH02LX1234",
+  "status": "Available",
+  "location": "Mumbai",
+  "daily_rate": 11000,
+  "features": ["Hybrid Engine", "Leather Seats", "Sunroof", "GPS", "Airbags"],
+  "last_serviced": "2025-07-30"
+}
+```
+
+---
+
+**5. Jaguar F-Type**
+
+```json
+{
+  "make": "Jaguar",
+  "model": "F-Type",
+  "year": 2021,
+  "type": "Luxury Coupe",
+  "seats": 4,
+  "transmission": "Manual",
+  "fuel_type": "Petrol",
+  "mileage": 18000,
+  "registration_no": "TN10JG9876",
+  "status": "Available",
+  "location": "Chennai",
+  "daily_rate": 13000,
+  "features": ["Convertible", "Sports Seats", "GPS", "Airbags"],
+  "last_serviced": "2025-05-10"
+}
+```
+
+---
+
+## How to POST (use your API)
+
+```
+POST http://localhost:4000/api/vehicles
+Content-Type: application/json
+
+{ <one of above JSON bodies> }
+```
+
+---
+
+# Step 2: Search URLs to Test Different Operations
+
+---
+
+### 1. Search by Type (Luxury Sedan)
+
+```
+GET /api/vehicles?type=Luxury%20Sedan
+```
+
+---
+
+### 2. Search by Status (Available)
+
+```
+GET /api/vehicles?status=Available
+```
+
+---
+
+### 3. Search by Location (Mumbai)
+
+```
+GET /api/vehicles?location=Mumbai
+```
+
+---
+
+### 4. Search by Number of Seats (5)
+
+```
+GET /api/vehicles?seats=5
+```
+
+---
+
+### 5. Search by Partial Registration Number (e.g., "MH01")
+
+```
+GET /api/vehicles?registration_no=MH01
+```
+
+---
+
+### 6. Combine Filters: Available Luxury SUVs in Mumbai
+
+```
+GET /api/vehicles?type=Luxury%20SUV&status=Available&location=Mumbai
+```
+
+---
+
+### 7. Search by Multiple Features (GPS and Airbags)
+
+```
+GET /api/vehicles?features=GPS,Airbags
+```
+
+---
+
+### 8. Search by Price Range (daily\_rate between 8000 and 12000)
+
+```
+GET /api/vehicles?minRate=8000&maxRate=12000
+```
+
+---
+
+### 9. Search by Mileage Range (between 8000 and 15000 km)
+
+```
+GET /api/vehicles?minMileage=8000&maxMileage=15000
+```
+
+---
+
+### 10. Search by Year Range (2022 to 2024)
+
+```
+GET /api/vehicles?minYear=2022&maxYear=2024
+```
+
+---
+
+### 11. Search with Pagination (limit 2 per page, page 1)
+
+```
+GET /api/vehicles?limit=2&page=1
+```
+
+---
+
+### 12. Search with Sorting (sort by year descending)
+
+```
+GET /api/vehicles?sortBy=year&order=desc
+```
+
+---
+
+# Next steps:
+
+* **First POST all 5 luxury cars above.**
+* After confirming data is saved, try these GET requests.
+* Let me know if you want me to provide code snippets for filtering/pagination/sorting for your controller.
+
+Ready when you are! 🚀

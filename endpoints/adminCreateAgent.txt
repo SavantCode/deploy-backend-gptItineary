@@ -1,0 +1,24 @@
+{{baseURL}}/api/v1/admin/agents
+
+input:
+{
+    "name": "Sarthak Agent",
+    "email": "sarthak.agent@example.com",
+    "password": "AgentPassword123"
+}
+
+{
+    "statusCode": 201,
+    "data": {
+        "_id": "68a969fec1ec1dbd19f3f27d",
+        "name": "Sarthak Agent",
+        "email": "sarthak.agent@example.com",
+        "role": "AGENT",
+        "isActive": true,
+        "createdAt": "2025-08-23T07:13:02.878Z",
+        "updatedAt": "2025-08-23T07:13:02.878Z",
+        "__v": 0
+    },
+    "message": "Agent created successfully",
+    "success": true
+}

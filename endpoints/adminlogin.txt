@@ -1,0 +1,31 @@
+post: 
+{{baseURL}}/api/v1/auth/login
+
+input:
+
+{
+    "email": "admin@example.com",
+    "password": "AdminPassword123"
+}
+
+
+
+
+output:
+{
+    "statusCode": 200,
+    "data": {
+        "user": {
+            "_id": "68a96888c2b8529392e243dc",
+            "name": "Super Admin",
+            "email": "admin@example.com",
+            "role": "ADMIN",
+            "isActive": true,
+            "updatedAt": "2025-08-23T07:09:52.336Z"
+        },
+        "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OGE5Njg4OGMyYjg1MjkzOTJlMjQzZGMiLCJlbWFpbCI6ImFkbWluQGV4YW1wbGUuY29tIiwibmFtZSI6IlN1cGVyIEFkbWluIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNzU1OTMyOTkyLCJleHAiOjE3NTYwMTkzOTJ9.gUxR4c3hqVln5ciQJ-upiMT0n6wGkKQcWfhn8Iv8w6E",
+        "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OGE5Njg4OGMyYjg1MjkzOTJlMjQzZGMiLCJpYXQiOjE3NTU5MzI5OTIsImV4cCI6MTc1Njc5Njk5Mn0.fKf5pMI3ZMupRn915PEVcEz6sZ0JVHi3dksZW95Cfgk"
+    },
+    "message": "User logged In Successfully",
+    "success": true
+}
