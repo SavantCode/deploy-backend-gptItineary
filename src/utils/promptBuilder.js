@@ -1,49 +1,59 @@
 export const buildPrompt = (data) => {
-  // Adjusted destructuring for your frontend input
-  const traveler = data.user?.name || "Traveler";
-  const travelerType = data.user?.type || "Solo";
-  const destination = data.travelBasics?.destination || "Unknown Destination";
-  const startDate = data.travelBasics?.startDate;
-  const endDate = data.travelBasics?.endDate;
+const {
+traveler = "Traveler",
+travelerType = "solo",
+travelBasics,
+tripOverviewDetails
+} = data;
 
-  if (!startDate || !endDate) {
-    throw new Error("Missing startDate or endDate in travelBasics");
-  }
+const {
+from,
+to,
+startDate,
+endDate,
+totalTravelers,
+totalDays
+} = travelBasics || {};
 
-  const start = new Date(startDate);
-  const end = new Date(endDate);
-  const days = Math.ceil((end - start) / (1000 * 60 * 60 * 24)) + 1;
+if (!from || !to || !startDate || !endDate) {
+throw new Error("Missing required travelBasics fields: from, to, startDate, or endDate.");
+}
 
-  const romanticNote =
-    travelerType.toLowerCase() === "couple"
-      ? "- Use a romantic, personal, and exciting tone in the descriptions.\n"
-      : "";
+const romanticNote = travelerType.toLowerCase() === "couple"
+? "- Use a romantic, personal, and exciting tone in the descriptions.\n"
+: "";
 
-  return `
-You are an expert travel planner. Create a detailed and realistic ${days}-day travel itinerary for the following traveler:
+const overviewNote = tripOverviewDetails
+? `- Traveler has shared the following preferences and interests:\n "${tripOverviewDetails.trim()}"\n`
+: "";
 
-${JSON.stringify(
-    {
-      traveler,
-      destination,
-      startDate,
-      endDate,
-      tripDuration: `${days} Days`,
-    },
-    null,
-    2
-  )}
+return `
+You are a travel planning expert. Create a detailed ${totalDays}-day itinerary for the traveler:
+
+${JSON.stringify({
+traveler,
+travelerType,
+from,
+to,
+startDate,
+endDate,
+totalTravelers,
+tripDuration: `${totalDays} Days`
+}, null, 2)}
+
+Guidelines:
+${romanticNote}${overviewNote}
 
 Requirements:
 - Output **only valid JSON**. Do not include any extra text or markdown.
 - Each day should include:
-  - A **day title** and a **summary** of the day
-  - **8 to 12 activities**, spaced from **6:00 AM to 10:00 PM**
-  - An appropriate mix of sightseeing, meals, transport, culture, rest, and unique local experiences
-  - Each activity must have:
-    - A **start time**
-    - An **activity title**
-    - A **detailed description**
+- A **day title** and a **summary** of the day
+- **8 to 12 activities**, spaced from **6:00 AM to 10:00 PM**
+- An appropriate mix of sightseeing, meals, transport, culture, rest, and unique local experiences
+- Each activity must have:
+- A **start time**
+- An **activity title**
+- A **detailed description**
 - Activities should be spaced realistically (1–2 hours each).
 - Include rest/sleep hours (10:00 PM to 6:00 AM).
 - Ensure a balanced schedule without overwhelming the traveler.
@@ -51,32 +61,29 @@ Requirements:
 - If meals are included, be specific (e.g., "Breakfast at Café X", "Dinner at rooftop restaurant").
 - If relevant, suggest surprise or hidden experiences for added excitement.
 
-${romanticNote}
-
-JSON Format Example:
-
+Format example:
 {
-  "traveler": "Traveler Name",
-  "destination": "City",
-  "tripDuration": "X Days",
-  "startDate": "YYYY-MM-DD",
-  "endDate": "YYYY-MM-DD",
-  "itinerary": [
-    {
-      "day": 1,
-      "title": "Day title",
-      "summary": "Brief overview of the day's theme",
-      "activities": [
-        {
-          "time": "6:00 AM",
-          "activity": "Activity name",
-          "details": "Detailed description of the experience."
-        }
-      ]
-    }
-  ]
+"traveler": "Mark",
+"from": { "country": "Japan", "city": "Tokyo" },
+"to": { "country": "Japan", "city": "Kyoto" },
+"tripDuration": "7 Days",
+"startDate": "2025-10-01",
+"endDate": "2025-10-07",
+"itinerary": [
+{
+"day": 1,
+"title": "Day Title",
+"summary": "Brief overview",
+"activities": [
+{
+"time": "6:00 AM",
+"activity": "Activity name",
+"details": "Detailed description of the experience."
 }
-
+]
+}
+]
+}
 Respond only with properly formatted JSON.
 `.trim();
 };

@@ -1,0 +1,525 @@
+{
+  "traveler": "Mark",
+  "travelerType": "family",
+  "travelBasics": {
+    "destination": "Japan",
+    "startDate": "2025-10-01",
+    "endDate": "2025-10-07",
+    "totalTravelers": 2,
+    "totalDays": 7
+  },
+  "preferences": {
+    "interests": ["culture", "food", "technology", "fun"],
+    "travelStyle": "leisure"
+  }
+}
+
+
+{
+    "traveler": "Traveler",
+    "destination": "Japan",
+    "tripDuration": "7 Days",
+    "startDate": "2025-10-01",
+    "endDate": "2025-10-07",
+    "itinerary": [
+        {
+            "day": 1,
+            "title": "Arrival in Tokyo & Shinjuku Exploration",
+            "summary": "Settle into Tokyo and explore the vibrant Shinjuku area.",
+            "activities": [
+                {
+                    "time": "6:00 AM",
+                    "activity": "Arrival at Narita (NRT) Airport",
+                    "details": "Arrive at Narita Airport, take the Narita Express to Shinjuku."
+                },
+                {
+                    "time": "8:00 AM",
+                    "activity": "Check-in at Hotel in Shinjuku",
+                    "details": "Check into your hotel and leave luggage.",
+                    "image": "https://pixabay.com/get/gdd71e8a7e2fc79c2d2b4606b431571fdd1641e7b00e5f69eb6ca8c8f263a408ea9e11f2e19b5146f8e386bad81642ff918e9920453f56318d894cf9c722b58d6_640.jpg"
+                },
+                {
+                    "time": "9:00 AM",
+                    "activity": "Breakfast at a local cafe",
+                    "details": "Enjoy a traditional Japanese breakfast at a cafe near your hotel.",
+                    "image": "https://pixabay.com/get/g315a0a71604e9ff0477250c6721992f10a056512aae48fb64578bba7c40771ed9c3227611365658ba70c4a49a5fb60c7ef404cfc6d767e65639df060a712386b_640.jpg"
+                },
+                {
+                    "time": "10:00 AM",
+                    "activity": "Shinjuku Gyoen National Garden",
+                    "details": "Explore this beautiful oasis in the heart of Tokyo.",
+                    "image": "https://pixabay.com/get/ge657bc45b95dc912ed90cb3d5b6bbd2f6dd59a498162d1b9468328953d47489a95501250e62d54e36b1da9d2597d7678092a9f25eb910ffe0960cf11d9710f60_640.jpg"
+                },
+                {
+                    "time": "12:00 PM",
+                    "activity": "Lunch at Omoide Yokocho (Memory Lane)",
+                    "details": "Experience the unique atmosphere and try yakitori (grilled skewers)."
+                },
+                {
+                    "time": "1:30 PM",
+                    "activity": "Tokyo Metropolitan Government Building Observation Deck",
+                    "details": "Enjoy panoramic views of Tokyo from this free observation deck.",
+                    "image": "https://pixabay.com/get/g25063903b280d21c22302fedc2303aa7165bbebdf8c72a3718bdb73892039002fa3f861400da18d110711665d98dda218b76f233f7f1deb68552cffbaed81c16_640.jpg"
+                },
+                {
+                    "time": "3:00 PM",
+                    "activity": "Shinjuku Golden Gai exploration",
+                    "details": "Wander through the narrow alleys of this atmospheric entertainment district.",
+                    "image": "https://pixabay.com/get/gf6660e366f6e35195b992cbf74bfbd33ce578dbc25e801a0bb5167aa05e065514aa936986609f46e8fd3d5f283e25de26eb9391c0727c819cb10131aacb20e1c_640.jpg"
+                },
+                {
+                    "time": "4:30 PM",
+                    "activity": "Robot Restaurant (Optional)",
+                    "details": "Experience a unique and over-the-top robot show (book in advance)."
+                },
+                {
+                    "time": "6:30 PM",
+                    "activity": "Dinner at a Shinjuku Izakaya",
+                    "details": "Enjoy dinner and drinks at a traditional Japanese pub.",
+                    "image": "https://pixabay.com/get/gfa15e57ee409bcbde351e0c3c6b53d21e69f2f2f9efc6cbfe80b9d5c44d5fbfee693c666bb4cb4b2a7ed5a2869a99b5979bda95ac6dba260f546db6ba4882568_640.jpg"
+                },
+                {
+                    "time": "8:00 PM",
+                    "activity": "Relax and unwind at the hotel",
+                    "details": "Rest after a busy day exploring Shinjuku.",
+                    "image": "https://pixabay.com/get/g5745fe027be53fe1269eae59f4ec922ecb00564e499ea7c2bed510189f1f26257c1d7269fce72186acc0fdeb303a334d0525d6f7304863002d435d1119247d9d_640.jpg"
+                },
+                {
+                    "time": "10:00 PM",
+                    "activity": "Sleep",
+                    "details": "Get a good night's rest.",
+                    "image": "https://pixabay.com/get/g866993454130c4597a2718dea62479c65ba088af514907581ddc92213407f4a012a9142033aec6b426cb5bd5962fa07bf7cb8d2fc514578a8f6162ef35d87f65_640.jpg"
+                }
+            ]
+        },
+        {
+            "day": 2,
+            "title": "Culture and Trendy Vibes in Harajuku & Shibuya",
+            "summary": "Experience the unique fashion and culture of Harajuku and Shibuya.",
+            "activities": [
+                {
+                    "time": "6:00 AM",
+                    "activity": "Sleep",
+                    "details": "Get a good night's rest.",
+                    "image": "https://pixabay.com/get/gfcf5434e8316cea76c36022767246a2f983904c1cf1b3bf1b68675e3c14c2579a813ebb2ea91d25852d19482f053447478d9aac0d218fb95dda15498f473c959_640.jpg"
+                },
+                {
+                    "time": "7:00 AM",
+                    "activity": "Breakfast at a local bakery",
+                    "details": "Grab a quick and delicious breakfast pastry.",
+                    "image": "https://pixabay.com/get/g47e1ecc75232bb73aba04a6ef0ee001fc4aa3726ff75c7b25a662cc830911dcb39a8ab834fd2c7c2cbaaeaf8a14a75ae8ed958c3f995ed040277db02d441ea9c_640.jpg"
+                },
+                {
+                    "time": "8:00 AM",
+                    "activity": "Meiji Jingu Shrine",
+                    "details": "Visit this peaceful oasis dedicated to Emperor Meiji and Empress Shoken.",
+                    "image": "https://pixabay.com/get/ga5f40ec58e2b24c1053d1a87e623f56cfd9a661bad0258111875affebac59b54caeca2af67ab81d8cad58388beb2348afd34578179a799a6257d7cd293c4529e_640.jpg"
+                },
+                {
+                    "time": "9:30 AM",
+                    "activity": "Harajuku Takeshita Street",
+                    "details": "Explore the colorful and trendy street known for its unique fashion and crepe stands.",
+                    "image": "https://pixabay.com/get/ge53f1d1b675a38ba9f2b0e45e2f3ad9d9eac54d072073cecc95bb69ce2bd00dddbf35e4553514d95383d0cfc7ae64c08_640.jpg"
+                },
+                {
+                    "time": "11:00 AM",
+                    "activity": "Lunch in Harajuku",
+                    "details": "Try Kawaii Monster Cafe for a unique and colorful dining experience or a more traditional ramen shop.",
+                    "image": "https://pixabay.com/get/g17389dec095d37f7ccd9b6264b153defc12ea68ea59c7a52263f7a7a9f1069ba809df510fbd2d5d51211739541f1633402a6a3ef0c31495e117304a4cae8f880_640.jpg"
+                },
+                {
+                    "time": "12:30 PM",
+                    "activity": "Shibuya Crossing & Hachiko Statue",
+                    "details": "Witness the iconic scramble crossing and pay your respects to the loyal dog Hachiko."
+                },
+                {
+                    "time": "2:00 PM",
+                    "activity": "Shibuya Sky Observation Deck",
+                    "details": "Enjoy breathtaking 360-degree views of Tokyo from this stunning observation deck.",
+                    "image": "https://pixabay.com/get/ga5d7d8709800a981b3093be0e154446c1d896af1a0b269fc091cdd52a53aa0ea76c095a7e4b2534442b809ab0372c6a8a5a159ff09a38ca6979972606e764ae0_640.jpg"
+                },
+                {
+                    "time": "4:00 PM",
+                    "activity": "Explore Shibuya's backstreets",
+                    "details": "Discover hidden cafes and shops away from the main streets.",
+                    "image": "https://pixabay.com/get/g6ffe04ee06d96d6ca42d4a4d9fde371005955dbf26ff3c8c9f7d5fc174bcec0fde4a09ff46e4339a11b10d50261c5e012521e9d8294b43aa0996a8aee5522664_640.jpg"
+                },
+                {
+                    "time": "6:00 PM",
+                    "activity": "Dinner in Shibuya",
+                    "details": "Enjoy dinner at a restaurant with a view of the Shibuya Crossing.",
+                    "image": "https://pixabay.com/get/gfd76f45ed44f5ccd7c1705ddd2a5926495e72ee11ba019270c45a9796f4df2193bc0d862845db556906c6dbee16257229e9d05d8e2bc7a9c3d424b26ec027a2a_640.jpg"
+                },
+                {
+                    "time": "7:30 PM",
+                    "activity": "Shopping in Shibuya 109",
+                    "details": "Explore the iconic fashion department store (optional).",
+                    "image": "https://pixabay.com/get/ge3b75d0c5ef64dbc1a60f7ef19125c216b71ed7c426a95fc71d8f46c79fc2291f9deff66b3fc1a6a07d0f99408e81761f6032a8e81f0fefb1906df898f602583_640.jpg"
+                },
+                {
+                    "time": "9:00 PM",
+                    "activity": "Return to hotel",
+                    "details": "Head back to your hotel.",
+                    "image": "https://pixabay.com/get/gbbd099612a194571374ce646bed73614d185a4d0d3847ceea044c5216e63ebd7b4aaca5dddf2d55002f6ec2c3032758f2752502d8f9a2a66d4fd1e856fffcfc9_640.jpg"
+                },
+                {
+                    "time": "10:00 PM",
+                    "activity": "Sleep",
+                    "details": "Get a good night's rest.",
+                    "image": "https://pixabay.com/get/g4727df66393bf76349471cd2429e739827869a81b7c8a9d2d733b50e8d08f1d63a5a32261bc8c136ea14c55383c31459756453b27063ee60cdfb69afc4016cfc_640.jpg"
+                }
+            ]
+        },
+        {
+            "day": 3,
+            "title": "Day Trip to Hakone: Volcanic Beauty & Art",
+            "summary": "Escape the city for a day trip to the stunning Hakone area.",
+            "activities": [
+                {
+                    "time": "6:00 AM",
+                    "activity": "Sleep",
+                    "details": "Get a good night's rest.",
+                    "image": "https://pixabay.com/get/g545a519023005947c233af373e06bef6891f0f9ecd99636937b89d1e13ee4bfce9ae632e6606dc426cea90b5089822a667027a1de6fd76b559d5020557076657_640.jpg"
+                },
+                {
+                    "time": "7:00 AM",
+                    "activity": "Breakfast at the hotel",
+                    "details": "Enjoy breakfast at your hotel or a nearby cafe.",
+                    "image": "https://pixabay.com/get/gc351e2dbc4f98763525fb46123aa6a5704154ebf070f490879e5de3e90018e80c616d0c91c6aa10e555f94f5a8ad7b60435ec07162f78f590d6a9d7dd6e2dbd9_640.jpg"
+                },
+                {
+                    "time": "8:00 AM",
+                    "activity": "Travel to Hakone (Shinkansen)",
+                    "details": "Take the Shinkansen bullet train to Odawara, the gateway to Hakone."
+                },
+                {
+                    "time": "9:30 AM",
+                    "activity": "Hakone Ropeway",
+                    "details": "Enjoy stunning views of Mount Fuji and volcanic hot springs from the Hakone Ropeway.",
+                    "image": "https://pixabay.com/get/g1998da5f7210e96e5a634e711fb67133c4b4c27822844d6f124016cf7086333c6aa56f7962b2fefef970cfa45f9a09a9de2cbbb08c8f98419405f233b5ddf410_640.jpg"
+                },
+                {
+                    "time": "11:00 AM",
+                    "activity": "Lake Ashi Cruise",
+                    "details": "Take a scenic cruise across Lake Ashi, enjoying the beautiful views.",
+                    "image": "https://pixabay.com/get/g9823a3ab18261c8298e8430fa3f48db032bfd2583ce7bb19ab1fddaa2125a109ad106a2bc5354ca563b4ac53dc917855d520c3c97a257d6c8d055481d2557b07_640.jpg"
+                },
+                {
+                    "time": "12:30 PM",
+                    "activity": "Lunch with a view of Mt. Fuji",
+                    "details": "Enjoy lunch at a restaurant with a view of Mount Fuji (weather permitting).",
+                    "image": "https://pixabay.com/get/g7486b09127ea276db2848ea900063455220d9349be76d89fb8c61318b7884e50a18bec32878eb5b1a40f1e44ba511bce20461ad3ed6fd9d1ed381a530e8383af_640.jpg"
+                },
+                {
+                    "time": "2:00 PM",
+                    "activity": "Hakone Open-Air Museum",
+                    "details": "Explore contemporary sculptures against the backdrop of stunning natural scenery.",
+                    "image": "https://pixabay.com/get/gc7cc218385883ce52e5b5ba3c8ee75eac1138f2c14ac69a79154917289f4dd163f6f177edd9f9cfccd480917a03a08d72a428fbbf3154e3c86b330b809cf0a8c_640.jpg"
+                },
+                {
+                    "time": "4:00 PM",
+                    "activity": "Hakone Venetian Glass Museum (Optional)",
+                    "details": "Visit the museum and admire the intricate glasswork."
+                },
+                {
+                    "time": "5:30 PM",
+                    "activity": "Return to Tokyo",
+                    "details": "Take the train back to Tokyo.",
+                    "image": "https://pixabay.com/get/g66edaccad09c84d7bb85091f940c28b440e79dcd75c257b301956f8191b8cf48148b8bb937be4af816fb2f46edd61d47955c4dfccd5a8fe7cae752649c21c51b_640.jpg"
+                },
+                {
+                    "time": "7:00 PM",
+                    "activity": "Dinner near your hotel",
+                    "details": "Enjoy a relaxing dinner near your hotel.",
+                    "image": "https://pixabay.com/get/gd5f58da7ae2d4521c6388968d0c3d21137c00b379118436a082bb1caac4f4e456c6cce5f348edb2628b69486c4123f55ddad1e4666c25cf4cd4bca67de4ee16b_640.jpg"
+                },
+                {
+                    "time": "8:30 PM",
+                    "activity": "Relax and unwind",
+                    "details": "Relax and prepare for the next day.",
+                    "image": "https://pixabay.com/get/g5e6c4922ff67d057b55d34cff79a64acbecbd4a9174808d9d0f6565e01ccaad8a14a2ea67b8cd3c78d69ab3f84d99399c189bec4fa034335791395c6059023c4_640.jpg"
+                },
+                {
+                    "time": "10:00 PM",
+                    "activity": "Sleep",
+                    "details": "Get a good night's rest.",
+                    "image": "https://pixabay.com/get/gd2901c5e3551a75ac77539d83c86523b7564fb054c57743c6233c652703b82df02d164d6627691c39e76486eef461532e10beb7cc49e04d44af6fa095d89ced6_640.jpg"
+                }
+            ]
+        },
+        {
+            "day": 4,
+            "title": "Asakusa's Old Town Charm & Ueno's Cultural Heart",
+            "summary": "Explore the traditional Asakusa district and the cultural hub of Ueno.",
+            "activities": [
+                {
+                    "time": "6:00 AM",
+                    "activity": "Sleep",
+                    "details": "Get a good night's rest.",
+                    "image": "https://pixabay.com/get/gf8fac01e1543b972d0031d170465f9995cc21c0590b808650a071f5a82ee54eddd93eddc6080c6ff5cb9f6808df4adfc3dc77ed2fa51eef13173f95efbf34b2d_640.jpg"
+                },
+                {
+                    "time": "7:00 AM",
+                    "activity": "Breakfast at a local cafe",
+                    "details": "Enjoy a quick and delicious breakfast.",
+                    "image": "https://pixabay.com/get/g4efde539fa07cf0d69a973e0565d893719ff4f28d62e6eef9f429644c445549d6019c07989390d553c08346e3b6855b56ce13d525f6a58999198c686f23e337c_640.jpg"
+                },
+                {
+                    "time": "8:00 AM",
+                    "activity": "Senso-ji Temple in Asakusa",
+                    "details": "Visit Tokyo's oldest temple and explore Nakamise-dori street.",
+                    "image": "https://pixabay.com/get/g897595498d043b97c43db7367961684455ec1542422f5a12395ff78cf8860c23ef58d20298f858e5d5cc923cfef8dce5144c90fabbfcfc3c7360e9744e6ed13d_640.jpg"
+                },
+                {
+                    "time": "10:00 AM",
+                    "activity": "Asakusa Culture Tourist Information Center",
+                    "details": "Learn more about Asakusa's history and culture.",
+                    "image": "https://pixabay.com/get/g0a04a8736d5de8d5b691a27912a610cbe1afa511f8efb198508f61e8c09c2c9035fc45343e4cabb4f88a35b832c854e25e1907e2c0cfda05dc9c1b46f3b382b4_640.jpg"
+                },
+                {
+                    "time": "11:00 AM",
+                    "activity": "Lunch in Asakusa",
+                    "details": "Try some traditional Asakusa street food.",
+                    "image": "https://pixabay.com/get/g53ca3665981cda165f63ccaee96d100fcff77c1e3802223c3d756dddffb38be38f0b6c7f91d6a81b3e3b88377cb415f115fadde6448b41f16642a3fc86dd5db2_640.jpg"
+                },
+                {
+                    "time": "12:30 PM",
+                    "activity": "Travel to Ueno Park",
+                    "details": "Take the subway to Ueno Park.",
+                    "image": "https://pixabay.com/get/gc3560d69bc812c4b6a3e5ae76d35b6563ca02ce24a42c6cfbd44110133d5989ef0faac5d4c5ee5d3c2885dd5610a41dda18c0ca75075c08e542e41ff94dd81d8_640.jpg"
+                },
+                {
+                    "time": "1:30 PM",
+                    "activity": "Ueno Park Exploration",
+                    "details": "Visit Ueno Zoo, Tokyo National Museum, or other museums in the park.",
+                    "image": "https://pixabay.com/get/ga14b462f81891d3246468a3fd407032b1c293465205bc021ec5f1a5378f347926aff0214e63c2861c129bd020ffe8e810e224cba0458e0ccc8d998b27b277f67_640.jpg"
+                },
+                {
+                    "time": "4:00 PM",
+                    "activity": "Ameya Yokocho Market (Ameyoko)",
+                    "details": "Explore this vibrant market with various food and goods."
+                },
+                {
+                    "time": "5:30 PM",
+                    "activity": "Dinner in Ueno",
+                    "details": "Enjoy dinner at a restaurant in Ueno.",
+                    "image": "https://pixabay.com/get/gb0842133bf470d04aad8e50ad5fcff20623881e2a41630e161fea3dbb2320b3b3f1def588d96dc629ecc44e794f1e75cbe682f443b838703a61a7a7d2ff3ab46_640.jpg"
+                },
+                {
+                    "time": "7:00 PM",
+                    "activity": "Ueno Toshogu Shrine",
+                    "details": "Visit this beautiful shrine dedicated to Tokugawa Ieyasu.",
+                    "image": "https://pixabay.com/get/g45f539ae8b475e394d96cf8a09201e4a8bb0b70e0886d4786c470dd3fde0733647ce3e39dbc0e88f6ac57f8c8e7c18294a16dd8b7aa5b2bc46160aa6d54a18fa_640.jpg"
+                },
+                {
+                    "time": "8:30 PM",
+                    "activity": "Return to hotel",
+                    "details": "Head back to your hotel.",
+                    "image": "https://pixabay.com/get/g352f91bc1d59f086ec02f9bde1ea20dea51394846432b7d245854e791b4029bce955170395d7e32db810f15cec89f8fd6c3e811d9ab7494541d565c10ecd63f0_640.jpg"
+                },
+                {
+                    "time": "10:00 PM",
+                    "activity": "Sleep",
+                    "details": "Get a good night's rest.",
+                    "image": "https://pixabay.com/get/g3fd9dfb56e98d47e239b344368e206dab094e980cf344e6ab15861fad9769e506f1f7fef40fa3e307477f575b91a0cb983acbb93af1abdebe1ddaa02a51900a0_640.jpg"
+                }
+            ]
+        },
+        {
+            "day": 5,
+            "title": "Imperial Palace & Ginza Elegance",
+            "summary": "Explore the Imperial Palace East Garden and the upscale Ginza district.",
+            "activities": [
+                {
+                    "time": "6:00 AM",
+                    "activity": "Sleep",
+                    "details": "Get a good night's rest.",
+                    "image": "https://pixabay.com/get/gb1b1c7c24b2d960abea8434d4032ba7a60c8b5c45b76f0ab481478ffa1b6d5e3ff148ca3e49065041238194225e22fcf9f457d412ec8fd312992638e520096b7_640.jpg"
+                },
+                {
+                    "time": "7:00 AM",
+                    "activity": "Breakfast at the hotel",
+                    "details": "Enjoy breakfast at your hotel.",
+                    "image": "https://pixabay.com/get/g1008916ffe9c735fdf1f3e69938a6a6e236054b45dc9ee24066fde4c83aa31c3553c248e04fd3e8c264b703ce0de5bd074859f7e5a574b43cf3ba63cbc03764c_640.jpg"
+                },
+                {
+                    "time": "8:00 AM",
+                    "activity": "Imperial Palace East Garden",
+                    "details": "Explore the beautiful gardens of the former Edo Castle.",
+                    "image": "https://pixabay.com/get/g7703e31499a2a1ab9370752eaaeafe8a3f2cc918155cdf3c7af382413700c4dc93b8a16d90fffaea8b281f5fab9c0610_640.jpg"
+                },
+                {
+                    "time": "10:00 AM",
+                    "activity": "Ginza District",
+                    "details": "Explore the upscale shopping and entertainment district.",
+                    "image": "https://pixabay.com/get/ga0bf06c5dbd7478d63936a82300eb7b3961296e24250218c7fa8ff4027f74cf93e0722434d1e2f81e25ec6ef840f3a53b27fd6cf084d788dad41bcf69c333f3b_640.jpg"
+                },
+                {
+                    "time": "12:00 PM",
+                    "activity": "Lunch in Ginza",
+                    "details": "Enjoy a luxurious lunch at a high-end restaurant or a more casual option.",
+                    "image": "https://pixabay.com/get/g2e25e17885116e753b12c5d2a76d04e8ecc8d27a3626707b990e8533829801ca3ca3af728821d6abb2a510b18b3c7fe0b451e643fc95287c2350c3e7f3ec80ac_640.jpg"
+                },
+                {
+                    "time": "1:30 PM",
+                    "activity": "Kabuki-za Theatre (Optional)",
+                    "details": "Catch a traditional Kabuki performance (check for showtimes)."
+                },
+                {
+                    "time": "4:00 PM",
+                    "activity": "Shopping in Ginza",
+                    "details": "Browse the high-end boutiques and department stores.",
+                    "image": "https://pixabay.com/get/g0e291bfdd9c720a190bffe7f4fd72be502108194befa09c5ec1875b8c4c0c9a51b108cdf9b289b945a216eeea036e09c9140e363bff354d7a8f9a5d4073f0414_640.jpg"
+                },
+                {
+                    "time": "6:00 PM",
+                    "activity": "Afternoon Tea in Ginza",
+                    "details": "Enjoy a traditional afternoon tea at a stylish cafe.",
+                    "image": "https://pixabay.com/get/g5c35879795fe784097d6802092d6479910ce8f27f323e2288d49ad33da8f43c3a4fd39f955b7c1937656611b18297ba35001c1329d1723827e89d8fdc3291d70_640.jpg"
+                },
+                {
+                    "time": "7:30 PM",
+                    "activity": "Dinner in Ginza",
+                    "details": "Enjoy dinner at a restaurant in Ginza.",
+                    "image": "https://pixabay.com/get/gcfb1024139a167b7303652b4d4dc62a4affed10d3388a7b265456f6f8e101ae208f2ab90c3839e93176fab9c00e5b34ed4f61bda24efcb532c3c5438decacd80_640.jpg"
+                },
+                {
+                    "time": "9:00 PM",
+                    "activity": "Return to hotel",
+                    "details": "Head back to your hotel.",
+                    "image": "https://pixabay.com/get/g24271a9d6cf256d21d3446580380f93ebbd7fe7ed93f1823aada112484de164eff5ff636ff4de9e7c73aae2cade988d2860db22a36d853c8744ce2957503a7f4_640.jpg"
+                },
+                {
+                    "time": "10:00 PM",
+                    "activity": "Sleep",
+                    "details": "Get a good night's rest.",
+                    "image": "https://pixabay.com/get/g8342b31331836f622368ce007b2bef9c39b2402b952991f05b5d1b3de1c2a432e37e4997141aa803dd11e8c29a6ed1c3b89e1354f333a8cd516a43df8d38ec82_640.jpg"
+                }
+            ]
+        },
+        {
+            "day": 6,
+            "title": "Day Trip to Kamakura: Coastal Temples & Great Buddha",
+            "summary": "Escape to the coastal city of Kamakura and visit its iconic temples and the Great Buddha.",
+            "activities": [
+                {
+                    "time": "6:00 AM",
+                    "activity": "Sleep",
+                    "details": "Get a good night's rest.",
+                    "image": "https://pixabay.com/get/g066568c3930ea8ed76cc46795a69723b31b79a527dcff398b0fc728e81c8862661e12ecd20e51df2baf6342f102f9302c97bdfda4b089921bff786422863811b_640.jpg"
+                },
+                {
+                    "time": "7:00 AM",
+                    "activity": "Breakfast at the hotel",
+                    "details": "Enjoy breakfast at your hotel.",
+                    "image": "https://pixabay.com/get/gd43b400fb0a96239ffa70b3645a6279b12550f77e360e773cde4de0eac3c2cc1864374cea77ffb871d988a0e0f32da472d407edb7628a12be0b900c59779abb4_640.jpg"
+                },
+                {
+                    "time": "8:00 AM",
+                    "activity": "Travel to Kamakura",
+                    "details": "Take the train to Kamakura.",
+                    "image": "https://pixabay.com/get/g72cc4cce830752c96796356e5b5018de118cdaf6d7a278b6968792cb29430d9b775fc3b8f8be9e665423039908dcb6152013f6663830cb17d24ca604fbf9b6e1_640.jpg"
+                },
+                {
+                    "time": "9:30 AM",
+                    "activity": "Tsurugaoka Hachimangu Shrine",
+                    "details": "Visit Kamakura's most important Shinto shrine.",
+                    "image": "https://pixabay.com/get/g7d85147e0c9133bbe4de1c6a64b8f71e8ec5c6143e8a688cf65fbf0ed010d582b1bc7bfb8b30ca516a8a063ad0538c257a012f0a0b31450804aae872eb626113_640.jpg"
+                },
+                {
+                    "time": "11:00 AM",
+                    "activity": "Kotoku-in Temple (Great Buddha)",
+                    "details": "See the iconic bronze Great Buddha statue."
+                },
+                {
+                    "time": "12:30 PM",
+                    "activity": "Lunch in Kamakura",
+                    "details": "Enjoy lunch at a local restaurant.",
+                    "image": "https://pixabay.com/get/gee115ad696a867fac39b6fe8b881e0cec1c1d3ea19d5fd51f26e827b2d0349ddfae1513eff33f6635aa6ea1b864866c24c373aaf0a3f248c4e74de9b39905ffc_640.jpg"
+                },
+                {
+                    "time": "2:00 PM",
+                    "activity": "Hase-dera Temple",
+                    "details": "Visit this beautiful temple known for its eleven-headed Kannon statue.",
+                    "image": "https://pixabay.com/get/g2f49f3ad2c6f836978014d5740bc1098e038e69f72db2696467ab1137ab1b4b42e41519f41305b92643d7ee63e16be3af385a41c5bd26bb234db3361bb1524c9_640.jpg"
+                },
+                {
+                    "time": "3:30 PM",
+                    "activity": "Yuigahama Beach",
+                    "details": "Relax and enjoy the coastal views at Yuigahama Beach.",
+                    "image": "https://pixabay.com/get/gd3cbf0bad5614b8357cb7785f45ce5eb1768789644bd05426f8b96c368e9620f79434d10fa75eefed7fe5080165fa6be8f5ac793584d221ef79f00f336180b06_640.jpg"
+                },
+                {
+                    "time": "5:00 PM",
+                    "activity": "Return to Tokyo",
+                    "details": "Take the train back to Tokyo.",
+                    "image": "https://pixabay.com/get/g55e9f690483e00b5b282832f80a85f982b70dfa061982f2691fd91ba3515fe7c53cdd8d4cab3e355ed3b85053ac0bcff229ed59d4a30a2659269f1e6d0f76fb6_640.jpg"
+                },
+                {
+                    "time": "6:30 PM",
+                    "activity": "Farewell Dinner",
+                    "details": "Enjoy a special farewell dinner at a restaurant of your choice.",
+                    "image": "https://pixabay.com/get/g29c8f436cfd0af32163053e3880658a31083faca4b88d172460862f45284916c00b3806d3073ff19e054d083122c072fbc8e45555d2ef969771c0d75f4606ddc_640.jpg"
+                },
+                {
+                    "time": "8:30 PM",
+                    "activity": "Relax and Pack",
+                    "details": "Relax and prepare for departure.",
+                    "image": "https://pixabay.com/get/g7794844089f8c84cf76833449e5c3570a8598b3493a1fc5f89894a35770bd9fc483c0bb9c371b29ac35822062ebffcf330022d5fc06c54d1871c892af2a73188_640.jpg"
+                },
+                {
+                    "time": "10:00 PM",
+                    "activity": "Sleep",
+                    "details": "Get a good night's rest.",
+                    "image": "https://pixabay.com/get/g48b9f3d164d9f219181088fdef6759459ce576264dcd83a1e3478c144ba84cdab3348c4a9765e70c1c057c42d5b6f03f3b48654e23a735f1fdb97b01ad7833e7_640.jpg"
+                }
+            ]
+        },
+        {
+            "day": 7,
+            "title": "Departure",
+            "summary": "Depart from Tokyo.",
+            "activities": [
+                {
+                    "time": "6:00 AM",
+                    "activity": "Sleep",
+                    "details": "Get a good night's rest.",
+                    "image": "https://pixabay.com/get/gadcef916b2ae2533b877ea8fdf107e50d2580515c69b8e075cf40964467e4dd93501df504a144bcfbc48f8f4450b713cc80559228aae695146616a1a44c7773e_640.jpg"
+                },
+                {
+                    "time": "7:00 AM",
+                    "activity": "Breakfast at the hotel",
+                    "details": "Enjoy a final Japanese breakfast.",
+                    "image": "https://pixabay.com/get/gd1ba293b88ad65e8f8aeee6d73c5664a3796365ee5932a81747dda4f67cae418d73cfecd273aba01c46ad3f0999888f5630bddb66dc3225180dba3e45dd13a95_640.jpg"
+                },
+                {
+                    "time": "8:00 AM",
+                    "activity": "Check out from hotel",
+                    "details": "Check out of your hotel and leave your luggage.",
+                    "image": "https://pixabay.com/get/g3e181b253047e7fd535ba36492e1df93aea93ece984bfd03cf6f7922a0d2101e6947a2416678abe80c84e6d37b5d9b43_640.jpg"
+                },
+                {
+                    "time": "9:00 AM",
+                    "activity": "Last-minute souvenir shopping (Optional)",
+                    "details": "Grab any last-minute souvenirs near your hotel."
+                },
+                {
+                    "time": "10:00 AM",
+                    "activity": "Travel to Narita (NRT) Airport",
+                    "details": "Take the Narita Express to Narita Airport."
+                },
+                {
+                    "time": "12:00 PM",
+                    "activity": "Lunch at the airport",
+                    "details": "Grab lunch at the airport.",
+                    "image": "https://pixabay.com/get/gf25ee273075c94436bfaf027b26c16f5a1e23c0bbbb7722562b56805ffed503f95ceb7ab8bedbe5430390ed4d455c6f2872c0bba9d52398972138012437a8b2a_640.jpg"
+                },
+                {
+                    "time": "1:00 PM",
+                    "activity": "Departure from Narita (NRT) Airport",
+                    "details": "Depart from Narita Airport."
+                }
+            ]
+        }
+    ]
+}

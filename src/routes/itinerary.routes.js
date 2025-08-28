@@ -3,7 +3,8 @@
 
 import { Router } from "express";
 import {
-    createItinerary,
+    generateGeminiItinerary,
+    SaveItinerary,
     deleteItinerary,
     getMyItineraries,
     updateItinerary,
@@ -16,7 +17,8 @@ const router = Router();
 // Apply JWT verification and Agent role authorization to all routes
 router.use(verifyJWT, authorizeRoles(USER_ROLES.AGENT));
 
-router.route("/").post(createItinerary).get(getMyItineraries);
+router.route("/").post(SaveItinerary).get(getMyItineraries);
 router.route("/:id").put(updateItinerary).delete(deleteItinerary);
+router.route("/generate-gemini-itinerary").post(generateGeminiItinerary);
 
 export default router;
